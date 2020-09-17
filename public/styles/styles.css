@@ -2,6 +2,10 @@ img {
     width: 100%;
 }
 
+body{
+    font-family: 'Roboto';
+}
+
 :root{
     --yellow-color: #EAC926;
 
