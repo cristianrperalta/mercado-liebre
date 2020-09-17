@@ -1,3 +1,38 @@
 img {
     width: 100%;
 }
+
+:root{
+    --yellow-color: #EAC926;
+
+    --blue-color: #03264C;;
+
+    --ligth-blue-color: #1259c3;
+
+    --dark-grey-color: #666;
+
+    --ligth-grey-color: #ebebeb;
+
+    --green-color: #39b54a;
+}
+
+p {
+    font-size: 12px;
+}
+
+.titular {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripciones {
+    font-size: 16px;
+}
+
