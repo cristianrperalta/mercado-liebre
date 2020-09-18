@@ -1,11 +1,3 @@
-img {
-    width: 100%;
-}
-
-body{
-    font-family: 'Roboto';
-}
-
 :root{
     --yellow-color: #EAC926;
 
@@ -20,6 +12,22 @@ body{
     --green-color: #39b54a;
 }
 
+body{
+    font-family: 'Roboto';
+}
+
+section{
+    background-color: var(--ligth-grey-color);
+}
+
+article{
+    background-color: white;
+}
+
+nav ul li{
+    list-style: none;
+}
+
 p {
     font-size: 12px;
 }
@@ -28,15 +36,80 @@ p {
     font-size: 24px;
 }
 
-.precios {
+#compra{
+    text-decoration-style: none;
+}
+
+#banner img{
+    padding-top: 12px;
+    width: 100%;
+}
+
+/*********************************************************** ULTIMAS VISITAS ************************************/
+#ultima-visita article img {
+    width: 100%;
+}
+
+#ultima-visita article .precios {
     font-size: 18px;
 }
 
-.descuentos {
+#ultima-visita article .descuentos{
     font-size: 16px;
+    color: var(--green-color);
 }
 
-.descripciones {
+#ultima-visita article .descripciones{
     font-size: 16px;
+    color: var(--dark-grey-color);
+}
+
+#ultima-visita article .camion{
+    color: var(--green-color);
+}
+
+/*********************************************************** OFERTAS *******************************************/
+#ofertas article img {
+    width: 100%;
+}
+
+#ofertas article .precios {
+    font-size: 18px;
+}
+
+#ofertas article .descuentos{
+    font-size: 16px;
+    color: var(--green-color);
+}
+
+#ofertas article .descripciones{
+    font-size: 16px;
+    color: var(--dark-grey-color);
+}
+
+#ofertas article .camion{
+    color: var(--green-color);
+}
+
+header{
+    display: block;
+    margin: 2px;
+    padding: 2px;
+    min-height: 100px;
+    background-color: var(--yellow-color);
+}
+
+footer{
+    display: block;
+    margin: 2px;
+    padding: 2px;
+    background-color: white;
+    color: var(--dark-grey-color)
+}
+
+footer .icono{
+    color: var(--ligth-blue-color);
+    display:block;
+    margin:auto;
 }
 
