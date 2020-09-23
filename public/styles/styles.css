@@ -14,6 +14,8 @@
 
 body{
     font-family: 'Roboto';
+    margin: 0px;
+    padding: 0px;
 }
 
 section{
@@ -43,6 +45,14 @@ p {
 #banner img{
     padding-top: 12px;
     width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
 }
 
 /*********************************************************** ULTIMAS VISITAS ************************************/
