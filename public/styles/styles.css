@@ -12,39 +12,96 @@
     --green-color: #39b54a;
 }
 
+header{
+    display: block;
+    min-height: 100px;
+    background-color: var(--yellow-color);
+}
+
+header .logo,
+header .nav-search{
+    width: 50%;
+}
+
+footer{
+    display: block;
+    background-color: white;
+    color: var(--dark-grey-color)
+}
+
+footer .icono{
+    color: var(--ligth-blue-color);
+    display:block;
+}
+
 body{
     font-family: 'Roboto';
     margin: 0px;
     padding: 0px;
 }
 
-section{
-    background-color: var(--ligth-grey-color);
-}
-
 article{
     background-color: white;
 }
 
-nav ul li{
+nav ul{
     list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
 }
 
 p {
     font-size: 12px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
-.titular {
-    font-size: 24px;
+.hamburger-contaniner{
+    width: 40px;
+    height: 40px;
+    background-color: #0044AA;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0px 20px 0px;
+    box-sizing: border-box;
+    display: block;
+    isolation: isolate;
 }
+
+#navegacion {
+    text-align: center;
+}
+
+#navegacion .nav-container{
+    display: inline-block;
+}
+
+#navegacion .hamburger-contaniner:hover .links{
+    display: inline-block;
+    background-color: #0022AA;
+}
+
+#navegacion .hamburger-contaniner:hover .links-internos{
+    display: inline-block;
+    background-color: #0022AA;
+}
+
+#navegacion .hamburger-contaniner .links,
+#navegacion .hamburger-contaniner .links-internos{
+    display: none;
+} 
 
 #compra{
     text-decoration-style: none;
 }
 
 #banner img{
-    padding-top: 12px;
     width: 100%;
+    display: block;
+    border: 0px;
 }
 
 a:link {
@@ -53,6 +110,47 @@ a:link {
 
 a:visited {
     color: black;
+}
+
+/***********************************************
+                ESTILOS MAIN
+************************************************/
+
+section{
+    background-color: var(--ligth-grey-color);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+}
+section article{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+section .titular {
+    margin: 20px 0px 20px 0px;
+    font-size: 24px;
+}
+
+footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+footer article h3{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+footer article {
+    margin: 20px 0px;
 }
 
 /*********************************************************** ULTIMAS VISITAS ************************************/
@@ -101,25 +199,53 @@ a:visited {
     color: var(--green-color);
 }
 
-header{
-    display: block;
-    margin: 2px;
-    padding: 2px;
-    min-height: 100px;
-    background-color: var(--yellow-color);
+/******************************************
+            Estilos para login
+******************************************/
+main{
+    background-color: var(--ligth-grey-color);
 }
 
-footer{
-    display: block;
-    margin: 2px;
-    padding: 2px;
-    background-color: white;
-    color: var(--dark-grey-color)
+#inputs-login{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-footer .icono{
-    color: var(--ligth-blue-color);
-    display:block;
-    margin:auto;
+.sin-borde{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0px;
 }
 
+#enviar:hover{
+    background-color: #CC1155;
+}
+
+.class-btn{
+    color: white;
+    background-color: #0044AA;
+}
+
+/******************************************
+            Estilos para Register
+******************************************/
+
+#inputs-registro,
+#inputs-perfil-usr,
+#inputs-intereses,
+#inputs-foto-usr{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.class-rst{
+    color: white;
+    background-color: #AA0044; 
+}
+
+#borrar:hover{
+    background-color: #CC1155;
+}
