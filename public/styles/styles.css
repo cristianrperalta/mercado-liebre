@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 :root{
     --yellow-color: #EAC926;
 
@@ -18,9 +24,8 @@ header{
     background-color: var(--yellow-color);
 }
 
-header .logo,
-header .nav-search{
-    width: 50%;
+.header-container{
+    justify-content: flex-start;
 }
 
 footer{
@@ -123,14 +128,21 @@ section{
     margin-right: 5%;
     display: inline-block;
 }
+
 section article{
     margin-top: 5px;
     margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+
+}
+
+.pie-articulo{
     padding-left: 15px;
     padding-right: 15px;
+    width: 100%;
 }
+
 section .titular {
     margin: 20px 0px 20px 0px;
     font-size: 24px;
@@ -153,52 +165,64 @@ footer article {
     margin: 20px 0px;
 }
 
-/*********************************************************** ULTIMAS VISITAS ************************************/
-#ultima-visita article img {
+.truck{
+    background-color: white;
+    border: 1px var(--green-color) solid;
+    border-radius: 50%;
+    color: var(--green-color);
+    padding: 1%;
+    position: absolute;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-end{
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    bottom: 12px;
+}
+
+/**************************************** ULTIMAS VISITAS Y OFERTAS ************************************/
+.ultima-visita,
+.ofertas{
+    flex-direction: column;
+}
+
+article img {
+    width: 100%;
+    border-bottom: 1px var(--ligth-grey-color) solid;
+}
+
+.precios {
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: var(--green-color);
+    flex-grow: 4;
+
+}
+
+.descripciones{
+    font-size: 16px;
+    color: var(--dark-grey-color);
+    align-items: flex-end;
     width: 100%;
 }
 
-#ultima-visita article .precios {
-    font-size: 18px;
+.margin-top-articles{
+    margin-top: 5%;
 }
 
-#ultima-visita article .descuentos{
-    font-size: 16px;
-    color: var(--green-color);
+.margin-bottom-articles{
+    margin-bottom: 5%;
 }
-
-#ultima-visita article .descripciones{
-    font-size: 16px;
-    color: var(--dark-grey-color);
-}
-
-#ultima-visita article .camion{
-    color: var(--green-color);
-}
-
-/*********************************************************** OFERTAS *******************************************/
-#ofertas article img {
-    width: 100%;
-}
-
-#ofertas article .precios {
-    font-size: 18px;
-}
-
-#ofertas article .descuentos{
-    font-size: 16px;
-    color: var(--green-color);
-}
-
-#ofertas article .descripciones{
-    font-size: 16px;
-    color: var(--dark-grey-color);
-}
-
-#ofertas article .camion{
-    color: var(--green-color);
-}
-
 /******************************************
             Estilos para login
 ******************************************/
@@ -219,6 +243,7 @@ main{
     border-radius: 5px;
     border: 0px;
 }
+
 
 #enviar:hover{
     background-color: #CC1155;
@@ -248,4 +273,36 @@ main{
 
 #borrar:hover{
     background-color: #CC1155;
+}
+
+.compra-venta{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.compra-venta .input{
+    flex-grow: 1;   
+    text-align: -webkit-center;
+    margin-left: -1.5%;
+}
+
+.compra-venta .label{
+    flex-grow: 1;
+}
+
+.d-flex-intereses{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.d-flex-intereses .input{
+    flex-grow: 1;   
+    margin-left: 7%;
+}
+
+.d-flex-intereses .label{
+    flex-grow: 7;
 }

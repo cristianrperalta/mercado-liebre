@@ -11,14 +11,19 @@
 </head>
 <body>
     <header>
-        <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" class="logo">
-        <form class="nav-search" method="GET" role="search">
-            <input type="text" class="nav-search-input" placeholder="Buscar productos, marcas y más">
-            <button type="submit" class="nav-search-btn" tabindex="3">
-                <div role="img" aria-label="Buscar" class="fa fa-search">
-                </div>
-            </button>
-        </form>
+        <div class="header-container d-flex">
+                <img class="d-flex" src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+            <div class="nav-search d-flex">
+                <form method="GET" role="search">
+                    <input class="nav-search-input" type="text" placeholder="Buscar productos, marcas y más">
+                    <button class="d-flex" type="submit" class="nav-search-btn" tabindex="3">
+                        <div role="img" aria-label="Buscar" class="fa fa-search">
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
+
         <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         <nav id="navegacion">
             <div class="nav-container">
@@ -51,23 +56,63 @@
             </div>
             <div id="inputs-perfil-usr">
                 <h3>Perfil del usuario</h3>
-                <input class="sin-borde" type="radio" id="radioComprador" name="radioPerfil" value="comprador">
-                <label for="radioComprador">Comprador</label>
-                <input class="sin-borde" type="radio" id="radioVendedor" name="radioPerfil" value="vendedor">
-                <label for="radioVendedor">Vendedor</label>
+                <div class="compra-venta">
+                    <div class="input">
+                        <input type="radio" id="radioComprador" name="radioPerfil" value="comprador">
+                    </div>
+                    <div>
+                        <label for="radioComprador">Comprador</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" id="radioVendedor" name="radioPerfil" value="vendedor">
+                    </div>
+                    <div class="label">
+                        <label for="radioVendedor">Vendedor</label>
+                    </div>
+                </div>
             </div>
             <div id="inputs-intereses">
                 <h3>Intereses</h3>
-                <input class="sin-borde" type="checkbox" id="electro" name="chkBoxIntereses" value="electro">
-                <label for="electro">Electro</label>
-                <input class="sin-borde" type="checkbox" id="moda" name="chkBoxIntereses" value="moda">
-                <label for="moda">Moda</label>
-                <input class="sin-borde" type="checkbox" id="hogar" name="chkBoxIntereses" value="hogar">
-                <label for="hogar">Electro</label>
-                <input class="sin-borde" type="checkbox" id="jugueteria" name="chkBoxIntereses" value="jugueteria">
-                <label for="jugueteria">Juguetería</label>
-                <input class="sin-borde" type="checkbox" id="vidasana" name="chkBoxIntereses" value="vidasana">
-                <label for="vidasana">Vida Sana</label>
+                <div class="d-flex-intereses">
+                    <div class="input">
+                        <input type="checkbox" id="electro" name="chkBoxIntereses" value="electro">
+                    </div>
+                    <div class="label">
+                        <label for="electro">Electro</label>
+                    </div>
+                </div>
+                <div class="d-flex-intereses">
+                    <div class="input">
+                        <input type="checkbox" id="moda" name="chkBoxIntereses" value="moda">
+                    </div>
+                    <div class="label">
+                        <label for="moda">Moda</label>
+                    </div>
+                </div>
+                <div class="d-flex-intereses">
+                    <div class="input">
+                        <input type="checkbox" id="hogar" name="chkBoxIntereses" value="hogar">
+                    </div>
+                    <div class="label">
+                        <label for="hogar">Hogar</label>
+                    </div>
+                </div>
+                <div class="d-flex-intereses">
+                    <div class="input">
+                        <input type="checkbox" id="jugueteria" name="chkBoxIntereses" value="jugueteria">
+                    </div>
+                    <div class="label">
+                        <label for="jugueteria">Juguetería</label>
+                    </div>
+                </div>
+                <div class="d-flex-intereses">
+                    <div class="input">
+                        <input type="checkbox" id="vidasana" name="chkBoxIntereses" value="vidasana">
+                    </div>
+                    <div class="label">
+                        <label for="vidasana">Vida Sana</label>
+                    </div>
+                </div>
             </div>
             <div id="inputs-foto-usr">
                 <h3>Elegí tu foto de usuario</h3>
