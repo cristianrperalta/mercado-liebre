@@ -205,7 +205,7 @@ article img {
 .descuentos {
     font-size: 16px;
     color: var(--green-color);
-    flex-grow: 4;
+    flex-grow: 10;
 
 }
 
