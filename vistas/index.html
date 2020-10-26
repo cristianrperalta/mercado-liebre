@@ -11,20 +11,18 @@
 </head>
 <body>
     <header>
-        <div class="header-container d-flex">
-                <img class="d-flex" src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
-            <div class="nav-search d-flex">
-                <form method="GET" role="search">
-                    <input class="nav-search-input" type="text" placeholder="Buscar productos, marcas y más">
-                    <button class="d-flex" type="submit" class="nav-search-btn" tabindex="3">
-                        <div role="img" aria-label="Buscar" class="fa fa-search">
-                        </div>
-                    </button>
-                </form>
+        <div class="header-container">
+                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
+            <div class="nav-search">
+				<form action="#" method="GET" class="search-form">
+					<input type="text" name="keywords" placeholder="Buscar productos, marcas y más" class="search-form_input">
+					<button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+				</form>
             </div>
         </div>
-
-        <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <div class="p-center">
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
         <nav id="navegacion">
             <div class="nav-container">
                 <div class="hamburger-contaniner">
@@ -50,138 +48,140 @@
         </div>
         <section class="ultima-visita d-flex">
             <p class="titular">Basado en tu última visita</p>
-            <article class="d-flex">
-                <div class="article-img d-flex">
+            <article class="class-shadow">
+                <div class="article-img">
                     <img src="/images/img-cafetera-moulinex.jpg" alt="Imagen de cafetera">
                 </div>
-                <div class="pie-articulo d-flex">
+                <div class="pie-articulo">
                     <div class="justify-end d-flex">
                         <i class="fas fa-truck truck"></i>
                     </div>
-                    <p class="precios margin-top-articles">$6.770</p>
-                    <p class="descuentos margin-top-articles">40% OFF</p>                        
-                    <p class="descripciones margin-top-articles margin-bottom-articles">Cafetera Moulinex Dolce Gusto.</p>
+                    <h2 class="precios">$6.770</h2>
+                    <span class="descuentos">40% OFF</span>                        
+                    <p class="descripciones margin-bottom-articles">Cafetera Moulinex Dolce Gusto.</p>
                 </div>
             </article>
-            <article class="d-flex">
-                <div class="article-img d-flex">
+            <article class="class-shadow">
+                <div class="article-img">
                     <img src="/images/img-macbook-pro-2019.jpg" alt="Banner del home">
                 </div>
                 <div class="pie-articulo d-flex">
                     <div class="justify-end d-flex">
                         <i class="fas fa-truck truck"></i>
                     </div>
-                    <p class="precios margin-top-articles">$230.000</p>
-                    <p class="descuentos margin-top-articles">20% OFF</p>
-                    <p class="descripciones margin-top-articles margin-bottom-articles">Macbook Pro 2019.</p>
+                    <h2 class="precios">$230.000</h2>
+                    <span class="descuentos">20% OFF</span>
+                    <p class="descripciones">Macbook Pro 2019.</p>
                 </div>
             </article>
-            <article class="d-flex">
-                <div class="article-img d-flex">
+            <article class="class-shadow">
+                <div class="article-img">
                     <img src="/images/img-samsung-galaxy-s10.jpg" alt="Banner del home">
                 </div>
                 <div class="pie-articulo d-flex">
                     <div class="justify-end d-flex">
                         <i class="fas fa-truck truck"></i>
                     </div>
-                    <p class="precios margin-top-articles">$70.500</p>
-                    <p class="descuentos margin-top-articles">15% OFF</p>
-                    <p class="descripciones margin-top-articles margin-bottom-articles">Teléfono móvil Samsung Galaxy S10.</p>
+                    <h2 class="precios">$70.500</h2>
+                    <span class="descuentos">15% OFF</span>
+                    <p class="descripciones">Teléfono móvil Samsung Galaxy S10.</p>
                 </div>
             </article>
-            <article class="d-flex">
-                <div class="article-img d-flex">
+            <article class="class-shadow">
+                <div class="article-img">
                     <img src="/images/img-tv-samsung-smart.jpg" alt="Banner del home">
                 </div>
-                <div class="pie-articulo d-flex">
+                <div class="pie-articulo">
                     <div class="justify-end d-flex">
                         <i class="fas fa-truck truck"></i>
                     </div>
-                    <p class="precios margin-top-articles">$34.000</p>
-                    <p class="descuentos margin-top-articles">5% OFF</p>
-                    <p class="descripciones margin-top-articles margin-bottom-articles">SmartTv Samsung 43".</p>
+                    <h2 class="precios">$34.000</h2>
+                    <span class="descuentos">5% OFF</span>
+                    <p class="descripciones">SmartTv Samsung 43".</p>
                 </div>
             </article>
         </section>
         
         <section class="ofertas d-flex">
             <p class="titular">Ofertas</p>
-            <article class="d-flex">
-                <div class="article-img d-flex">
+            <article class="class-shadow">
+                <div class="article-img">
                     <img src="/images/img-cafetera-moulinex.jpg" alt="Imagen de cafetera">
                 </div>
                 <div class="pie-articulo d-flex">
                     <div class="justify-end d-flex">
                         <i class="fas fa-truck truck"></i>
                     </div>
-                    <p class="precios margin-top-articles">$6.770</p>
-                    <p class="descuentos margin-top-articles">40% OFF</p>                        
-                    <p class="descripciones margin-top-articles margin-bottom-articles">Cafetera Moulinex Dolce Gusto.</p>
+                    <h2 class="precios">$6.770</h2>
+                    <span class="descuentos">40% OFF</span>                        
+                    <p class="descripciones">Cafetera Moulinex Dolce Gusto.</p>
                 </div>
             </article>
-            <article class="d-flex">
-                <div class="article-img d-flex">
+            <article class="class-shadow">
+                <div class="article-img">
                     <img src="/images/img-macbook-pro-2019.jpg" alt="Banner del home">
                 </div>
                 <div class="pie-articulo d-flex">
                     <div class="justify-end d-flex">
                         <i class="fas fa-truck truck"></i>
                     </div>
-                    <p class="precios margin-top-articles">$230.000</p>
-                    <p class="descuentos margin-top-articles">20% OFF</p>
-                    <p class="descripciones margin-top-articles margin-bottom-articles">Macbook Pro 2019.</p>
+                    <h2 class="precios">$230.000</h2>
+                    <span class="descuentos">20% OFF</span>
+                    <p class="descripciones">Macbook Pro 2019.</p>
                 </div>
             </article>
-            <article class="d-flex">
-                <div class="article-img d-flex">
+            <article class="class-shadow">
+                <div class="article-img">
                     <img src="/images/img-samsung-galaxy-s10.jpg" alt="Banner del home">
                 </div>
                 <div class="pie-articulo d-flex">
                     <div class="justify-end d-flex">
                         <i class="fas fa-truck truck"></i>
                     </div>
-                    <p class="precios margin-top-articles">$70.500</p>
-                    <p class="descuentos margin-top-articles">15% OFF</p>
-                    <p class="descripciones margin-top-articles margin-bottom-articles">Teléfono móvil Samsung Galaxy S10.</p>
+                    <h2 class="precios margin-top-articles">$70.500</h2>
+                    <span class="descuentos margin-top-articles">15% OFF</span>
+                    <p class="descripciones">Teléfono móvil Samsung Galaxy S10.</p>
                 </div>
             </article>
-            <article class="d-flex">
-                <div class="article-img d-flex">
+            <article class="class-shadow">
+                <div class="article-img">
                     <img src="/images/img-tv-samsung-smart.jpg" alt="Banner del home">
                 </div>
                 <div class="pie-articulo d-flex">
                     <div class="justify-end d-flex">
                         <i class="fas fa-truck truck"></i>
                     </div>
-                    <p class="precios margin-top-articles">$34.000</p>
-                    <p class="descuentos margin-top-articles">5% OFF</p>
-                    <p class="descripciones margin-top-articles margin-bottom-articles">SmartTv Samsung 43".</p>
+                    <h2 class="precios margin-top-articles">$34.000</h2>
+                    <span class="descuentos margin-top-articles">5% OFF</span>
+                    <p class="descripciones">SmartTv Samsung 43".</p>
                 </div>
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="d-flex">
         <article>
-            <div class="icono"><i class="fas fa-credit-card"></i></div>
-            <h3>Pagá con tarjeta o en efectivo</h3>
+            <i class="icono fas fa-credit-card"></i>
+            <h2>Pagá con tarjeta o en efectivo</h2>
             <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de
                 pago. ¡Y siempre es seguro!</p>
         </article>
         <article>
-            <div class="icono"><i class="fas fa-gift"></i></div>
-            <h3>Envío gratis desde los $ 2.500</h3>
+            <i class="icono fas fa-gift"></i>
+            <h2>Envío gratis desde los $ 2.500</h2>
             <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de
                 productos. Es un beneficio de MercadoPuntos.</p>
         </article>
         <article>
-            <div class="icono"><i class="fas fa-user-shield"></i></div>
-            <h3>Seguridad, de principio a fin</h3>
+            <i class="icono fas fa-user-shield"></i>
+            <h2>Seguridad, de principio a fin</h2>
             <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer
                 porque estás siempre prtegid@.</p>
         </article>
-        <div>
+    </footer>
+    <div class="sub-footer">
+        <div class="container">
             <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
         </div>
-    </footer>
+    </div>
 </body>
 </html>
